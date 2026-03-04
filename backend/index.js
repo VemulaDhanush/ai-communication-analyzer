@@ -15,7 +15,7 @@ app.use(express.json());
 /* ---------------- MONGODB CONNECTION ---------------- */
 
 mongoose.connect(
-  "mongodb+srv://vemuladhanush:Dhanush%402006@communication.zewq0op.mongodb.net/communicationDB"
+  "mongodb+srv://vemuladhanush://password@communication.zewq0op.mongodb.net/communicationDB"
 )
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.error("MongoDB Error:", err));
@@ -150,4 +150,5 @@ app.post("/api/login", async (req, res) => {
 
 app.listen(5001, () => {
   console.log("Node server running on http://localhost:5001");
+
 });
